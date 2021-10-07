@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Colors.white,
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primaryColor: Colors.orange.shade800),
       initialRoute: "/home",
       routes: {
         "/": (context) => LogIn(),
